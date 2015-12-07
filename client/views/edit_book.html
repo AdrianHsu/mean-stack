@@ -1,76 +1,51 @@
-<html ng-app="myApp">
-
-<body>
-    <!-- Google Tag Manager -->
-    <noscript>
-        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TR6S3J" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TR6S3J');
-    </script>
-    <!-- End Google Tag Manager -->
-    <a href="#/books">回到上一頁</a>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">修改書評</h3>
-        </div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-md-12">
-                    <form ng-submit="updateBook()" ng-init="getBook()">
-                        <div class="form-group">
-                            <label>書名</label>
-                            <input type="text" class="form-control" ng-model="book.title" placeholder="Title">
-                        </div>
-                        <div class="form-group">
-                            <label>類別</label>
-                            <input type="text" class="form-control" ng-model="book.genre" placeholder="Genre">
-                        </div>
-                        <div class="form-group">
-                            <label>作者</label>
-                            <input type="text" class="form-control" ng-model="book.author" placeholder="Author">
-                        </div>
-                        <div class="form-group">
-                            <label>出版社</label>
-                            <input type="text" class="form-control" ng-model="book.publisher" placeholder="Publisher">
-                        </div>
-                        <div class="form-group">
-                            <label>頁數</label>
-                            <input type="text" class="form-control" ng-model="book.pages" placeholder="Pages">
-                        </div>
-                        <div class="form-group">
-                            <label>閱畢日期</label>
-                            <input type="text" class="form-control" ng-model="book.read_date" placeholder="2015/12/07">
-                        </div>
-                        <div class="form-group">
-                            <label>我的書評</label>
-                            <textarea class="form-control" ng-model="book.description" placeholder="Description"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Image URL</label>
-                            <input type="text" class="form-control" ng-model="book.image_url" placeholder="Image URL">
-                        </div>
-                        <div class="form-group">
-                            <label>Visit URL</label>
-                            <input type="text" class="form-control" ng-model="book.visit_url" placeholder="i.e. original post's URL on Facebook">
-                        </div>
-                        <button type="submit" class="btn btn-default">完成</button>
-                    </form>
-                </div>
+<a href="#/books">回到上一頁</a>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">修改書評</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form ng-submit="updateBook()" ng-init="getBook()">
+                    <div class="form-group">
+                        <label>書名</label>
+                        <input type="text" class="form-control" ng-model="book.title" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <label>類別</label>
+                        <input type="text" class="form-control" ng-model="book.genre" placeholder="Genre">
+                    </div>
+                    <div class="form-group">
+                        <label>作者</label>
+                        <input type="text" class="form-control" ng-model="book.author" placeholder="Author">
+                    </div>
+                    <div class="form-group">
+                        <label>出版社</label>
+                        <input type="text" class="form-control" ng-model="book.publisher" placeholder="Publisher">
+                    </div>
+                    <div class="form-group">
+                        <label>頁數</label>
+                        <input type="text" class="form-control" ng-model="book.pages" placeholder="Pages">
+                    </div>
+                    <div class="form-group">
+                        <label>閱畢日期</label>
+                        <input type="text" class="form-control" ng-model="book.read_date" placeholder="2015/12/07">
+                    </div>
+                    <div class="form-group">
+                        <label>我的書評</label>
+                        <textarea class="form-control" ng-model="book.description" placeholder="Description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Image URL</label>
+                        <input type="text" class="form-control" ng-model="book.image_url" placeholder="Image URL">
+                    </div>
+                    <div class="form-group">
+                        <label>Visit URL</label>
+                        <input type="text" class="form-control" ng-model="book.visit_url" placeholder="i.e. original post's URL on Facebook">
+                    </div>
+                    <button type="submit" class="btn btn-default">完成</button>
+                </form>
             </div>
         </div>
     </div>
-</body>
+</div>
