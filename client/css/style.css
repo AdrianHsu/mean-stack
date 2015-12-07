@@ -1,5 +1,9 @@
 p {
-    white-space: pre-wrap
+  white-space: pre-wrap
+}
+.short p {
+	max-height: 160px;
+	overflow: hidden;
 }
 img {
     width: 100%;

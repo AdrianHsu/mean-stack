@@ -9,7 +9,10 @@
     			<div class="col-md-6">
     				<h4>{{book.title}}</h4>
             <p>閱畢日期： {{book.read_date}}</p>
-    				<p>{{book.description}}</p>
+    				<!-- <p class="ellipsis">{{book.description}}</p> -->
+            <div class="short">
+            <p>{{book.description}}</p>
+            </div>
     				<a class="btn btn-primary" href="#/books/details/{{book._id}}">閱讀全文</a>
     			</div>
     			<div class="col-md-6">
